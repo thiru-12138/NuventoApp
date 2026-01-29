@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		1FE428D52F2BAF8B00CAF82A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FE428BA2F2BAF8A00CAF82A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE428C12F2BAF8A00CAF82A;
+			remoteInfo = NuventoMachineTest;
+		};
+		1FE428DF2F2BAF8B00CAF82A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FE428BA2F2BAF8A00CAF82A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE428C12F2BAF8A00CAF82A;
+			remoteInfo = NuventoMachineTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FE428C22F2BAF8A00CAF82A /* NuventoMachineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuventoMachineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE428D42F2BAF8B00CAF82A /* NuventoMachineTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuventoMachineTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE428DE2F2BAF8B00CAF82A /* NuventoMachineTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuventoMachineTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1FE428C42F2BAF8A00CAF82A /* NuventoMachineTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NuventoMachineTest;
+			sourceTree = "<group>";
+		};
+		1FE428D72F2BAF8B00CAF82A /* NuventoMachineTestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NuventoMachineTestTests;
+			sourceTree = "<group>";
+		};
+		1FE428E12F2BAF8B00CAF82A /* NuventoMachineTestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NuventoMachineTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FE428BF2F2BAF8A00CAF82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428D12F2BAF8B00CAF82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428DB2F2BAF8B00CAF82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FE428B92F2BAF8A00CAF82A = {
+			isa = PBXGroup;
+			children = (
+				1FE428C42F2BAF8A00CAF82A /* NuventoMachineTest */,
+				1FE428D72F2BAF8B00CAF82A /* NuventoMachineTestTests */,
+				1FE428E12F2BAF8B00CAF82A /* NuventoMachineTestUITests */,
+				1FE428C32F2BAF8A00CAF82A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FE428C32F2BAF8A00CAF82A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FE428C22F2BAF8A00CAF82A /* NuventoMachineTest.app */,
+				1FE428D42F2BAF8B00CAF82A /* NuventoMachineTestTests.xctest */,
+				1FE428DE2F2BAF8B00CAF82A /* NuventoMachineTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FE428C12F2BAF8A00CAF82A /* NuventoMachineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE428E82F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTest" */;
+			buildPhases = (
+				1FE428BE2F2BAF8A00CAF82A /* Sources */,
+				1FE428BF2F2BAF8A00CAF82A /* Frameworks */,
+				1FE428C02F2BAF8A00CAF82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1FE428C42F2BAF8A00CAF82A /* NuventoMachineTest */,
+			);
+			name = NuventoMachineTest;
+			packageProductDependencies = (
+			);
+			productName = NuventoMachineTest;
+			productReference = 1FE428C22F2BAF8A00CAF82A /* NuventoMachineTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FE428D32F2BAF8B00CAF82A /* NuventoMachineTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE428EB2F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTestTests" */;
+			buildPhases = (
+				1FE428D02F2BAF8B00CAF82A /* Sources */,
+				1FE428D12F2BAF8B00CAF82A /* Frameworks */,
+				1FE428D22F2BAF8B00CAF82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FE428D62F2BAF8B00CAF82A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1FE428D72F2BAF8B00CAF82A /* NuventoMachineTestTests */,
+			);
+			name = NuventoMachineTestTests;
+			packageProductDependencies = (
+			);
+			productName = NuventoMachineTestTests;
+			productReference = 1FE428D42F2BAF8B00CAF82A /* NuventoMachineTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FE428DD2F2BAF8B00CAF82A /* NuventoMachineTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE428EE2F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTestUITests" */;
+			buildPhases = (
+				1FE428DA2F2BAF8B00CAF82A /* Sources */,
+				1FE428DB2F2BAF8B00CAF82A /* Frameworks */,
+				1FE428DC2F2BAF8B00CAF82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FE428E02F2BAF8B00CAF82A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1FE428E12F2BAF8B00CAF82A /* NuventoMachineTestUITests */,
+			);
+			name = NuventoMachineTestUITests;
+			packageProductDependencies = (
+			);
+			productName = NuventoMachineTestUITests;
+			productReference = 1FE428DE2F2BAF8B00CAF82A /* NuventoMachineTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FE428BA2F2BAF8A00CAF82A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					1FE428C12F2BAF8A00CAF82A = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					1FE428D32F2BAF8B00CAF82A = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 1FE428C12F2BAF8A00CAF82A;
+					};
+					1FE428DD2F2BAF8B00CAF82A = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 1FE428C12F2BAF8A00CAF82A;
+					};
+				};
+			};
+			buildConfigurationList = 1FE428BD2F2BAF8A00CAF82A /* Build configuration list for PBXProject "NuventoMachineTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FE428B92F2BAF8A00CAF82A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1FE428C32F2BAF8A00CAF82A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FE428C12F2BAF8A00CAF82A /* NuventoMachineTest */,
+				1FE428D32F2BAF8B00CAF82A /* NuventoMachineTestTests */,
+				1FE428DD2F2BAF8B00CAF82A /* NuventoMachineTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FE428C02F2BAF8A00CAF82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428D22F2BAF8B00CAF82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428DC2F2BAF8B00CAF82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FE428BE2F2BAF8A00CAF82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428D02F2BAF8B00CAF82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE428DA2F2BAF8B00CAF82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FE428D62F2BAF8B00CAF82A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FE428C12F2BAF8A00CAF82A /* NuventoMachineTest */;
+			targetProxy = 1FE428D52F2BAF8B00CAF82A /* PBXContainerItemProxy */;
+		};
+		1FE428E02F2BAF8B00CAF82A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FE428C12F2BAF8A00CAF82A /* NuventoMachineTest */;
+			targetProxy = 1FE428DF2F2BAF8B00CAF82A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FE428E62F2BAF8B00CAF82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FE428E72F2BAF8B00CAF82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FE428E92F2BAF8B00CAF82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FE428EA2F2BAF8B00CAF82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FE428EC2F2BAF8B00CAF82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuventoMachineTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NuventoMachineTest";
+			};
+			name = Debug;
+		};
+		1FE428ED2F2BAF8B00CAF82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuventoMachineTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NuventoMachineTest";
+			};
+			name = Release;
+		};
+		1FE428EF2F2BAF8B00CAF82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NuventoMachineTest;
+			};
+			name = Debug;
+		};
+		1FE428F02F2BAF8B00CAF82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtg.NuventoMachineTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NuventoMachineTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FE428BD2F2BAF8A00CAF82A /* Build configuration list for PBXProject "NuventoMachineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE428E62F2BAF8B00CAF82A /* Debug */,
+				1FE428E72F2BAF8B00CAF82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE428E82F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE428E92F2BAF8B00CAF82A /* Debug */,
+				1FE428EA2F2BAF8B00CAF82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE428EB2F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE428EC2F2BAF8B00CAF82A /* Debug */,
+				1FE428ED2F2BAF8B00CAF82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE428EE2F2BAF8B00CAF82A /* Build configuration list for PBXNativeTarget "NuventoMachineTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE428EF2F2BAF8B00CAF82A /* Debug */,
+				1FE428F02F2BAF8B00CAF82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FE428BA2F2BAF8A00CAF82A /* Project object */;
+}
