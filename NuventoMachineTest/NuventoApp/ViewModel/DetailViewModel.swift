@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 final class DetailViewModel: ObservableObject {
-    @Published var info: IPInfo?
-    @Published var errorMessage: String?
-    @Published var isLoading = false
+    @Published private(set) var info: IPInfo?
+    @Published private(set) var errorMessage: String?
+    @Published private(set) var isLoading = false
     
     private let service: DataService
     private var task: Task<Void, Never>?

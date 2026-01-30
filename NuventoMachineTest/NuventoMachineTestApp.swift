@@ -10,13 +10,13 @@ import CoreData
 
 @main
 struct NuventoMachineTestApp: App {
-    @StateObject private var vm = LoginViewModel()
+    @StateObject private var log = LoginViewModel()
 
     var body: some Scene {
         WindowGroup {
             RootView()
                 .preferredColorScheme(.light)
-                .environmentObject(vm)
+                .environmentObject(log)
         }
     }
 }

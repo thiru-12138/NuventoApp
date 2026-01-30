@@ -10,7 +10,7 @@ import Combine
 
 @MainActor
 final class HomeViewModel: ObservableObject {
-    @Published var devices: [DeviceModel] = []
+    @Published private(set) var devices: [DeviceModel] = []
     private let dns = DNSService()
 
     init() {

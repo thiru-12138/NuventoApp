@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var authVM: LoginViewModel
+    @EnvironmentObject var log: LoginViewModel
 
     var body: some View {
         Group {
-            if authVM.isLoggedIn {
+            if log.isLoggedIn {
                 NavigationStack {
                     HomeScreenView()
                 }
@@ -20,8 +20,8 @@ struct RootView: View {
                 LoginScreenView()
             }
         }
-        .onAppear(perform: {
-            authVM.silentAuth()
-        })
+        .task { [weak log] in
+            await log?.silentAuth()
+        }
     }
 }

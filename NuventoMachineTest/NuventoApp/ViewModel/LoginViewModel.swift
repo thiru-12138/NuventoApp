@@ -11,7 +11,7 @@ import AuthenticationServices
 import Network
 
 class LoginViewModel: ObservableObject {
-    @Published var isLoggedIn = false
+    @Published private(set) var isLoggedIn = false
     private let monitor = NWPathMonitor()
     private let tokenKey = "oauth_access_token"
 
@@ -27,7 +27,7 @@ class LoginViewModel: ObservableObject {
     }
 
     // MARK: - Silent Authentication
-    func silentAuth() {
+    func silentAuth() async {
         if monitor.currentPath.status != .satisfied {
             logout()
         } else if KeyChainHelper.load(key: tokenKey) != nil {

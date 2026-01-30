@@ -44,7 +44,7 @@ struct HomeScreenView: View {
             // MARK: - Auto Logout
             Task { @MainActor in
                 try? await Task.sleep(nanoseconds: 3_000_000_000)
-                log.silentAuth()
+                await log.silentAuth()
             }
         })
     }
