@@ -17,12 +17,18 @@ struct HomeScreenView: View {
                 Text("No Devices Found").nuventoTextStyle()
             } else {
                 List(vm.devices) { device in
-                    NavigationLink(destination: DetailScreenView(device: device)) {
-                        VStack(alignment: .leading) {
-                            Text(device.name)
-                                .nuventoTextStyle()
-                            Text(device.ipAddress)
-                                .nuventoTextStyle()
+                    NavigationLink(destination: DetailScreenView(devicename: device.name)) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(device.name)
+                                    .font(.headline)
+                                Text(device.ipAddress)
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Circle()
+                                .fill(device.isReachable ? Color.green : Color.red)
+                                .frame(width: 10, height: 10)
                             Text(device.isReachable ? "Reachable" : "Un-Reachable")
                                 .foregroundColor(device.isReachable ? .green : .red)
                                 .nuventoTextStyle()

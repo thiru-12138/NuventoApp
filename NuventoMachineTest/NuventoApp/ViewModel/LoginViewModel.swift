@@ -7,28 +7,39 @@
 
 import Foundation
 import Combine
+import AuthenticationServices
+import Network
 
-@MainActor
-final class LoginViewModel: ObservableObject {
+class LoginViewModel: ObservableObject {
     @Published var isLoggedIn = false
+    private let monitor = NWPathMonitor()
+    private let tokenKey = "oauth_access_token"
 
+    init() {
+        monitor.start(queue: DispatchQueue.global())
+    }
+
+    // MARK: - Login
     func login(username: String, password: String) async {
-        do {
-            try await AuthService.shared.login(username: username, password: password)
+        let token = "nuvento_oauth_token_123"
+        KeyChainHelper.save(token, key: tokenKey)
+        isLoggedIn = true
+    }
+
+    // MARK: - Silent Authentication
+    func silentAuth() {
+        if monitor.currentPath.status != .satisfied {
+            logout()
+        } else if KeyChainHelper.load(key: tokenKey) != nil {
             isLoggedIn = true
-        } catch {
+        } else {
             isLoggedIn = false
         }
     }
 
-    func silentAuth() {
-        do {
-            isLoggedIn = try AuthService.shared.silentLogin()
-        } catch {
-            isLoggedIn = false
-        }
-        print("isLoggedIn", isLoggedIn)
+    // MARK: - Logout
+    func logout() {
+        KeyChainHelper.delete(key: tokenKey)
+        isLoggedIn = false
     }
 }
-
-

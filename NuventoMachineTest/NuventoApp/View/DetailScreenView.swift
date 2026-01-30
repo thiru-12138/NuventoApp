@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DetailScreenView: View {
-    let device: DeviceModel
+    let devicename: String
     @StateObject private var vm: DetailViewModel
     
-    init(device: DeviceModel) {
-        self.device = device
+    init(devicename: String) {
+        self.devicename = devicename
         
         let service = APIService()
         _vm = StateObject(wrappedValue: DetailViewModel(service: service))
@@ -22,28 +22,31 @@ struct DetailScreenView: View {
         ZStack {
             VStack {
                 if vm.isLoading {
-                    ProgressView()
-                }
-
-                Text("Device: \(device.name)")
-                    .font(Font.system(size: 15, weight: .semibold))
-                if let errorMessage = vm.errorMessage {
-                    Text(errorMessage).nuventoTextStyle()
+                    ProgressView("Getting Details")
+                } else if let errorMessage = vm.errorMessage {
+                    Text(errorMessage).nuventoTextStyle().padding()
                 } else {
                     if let info = vm.info {
-                        Text("City: \(info.city ?? "-")")
-                            .nuventoTextStyle()
-                        Text("Region: \(info.region ?? "-")")
-                            .nuventoTextStyle()
-                        Text("Country: \(info.country ?? "-")")
-                            .nuventoTextStyle()
-                        Text("Company: \(info.org ?? "-")")
-                            .nuventoTextStyle()
+                        Form {
+                            Section("Device Name") {
+                                Text("\(devicename)")
+                            }
+                            Section("IP Address") {
+                                Text(info.ip)
+                            }
+                            Section("Location") {
+                                Text("\(info.city), \(info.region)")
+                                Text(info.country)
+                            }
+                            Section("Provider") {
+                                Text(info.org)
+                            }
+                        }
                     }
                 }
-            }.padding()
+            }
         }
-        .navigationTitle("Details")
+        .navigationTitle("Device Details")
         .task { [weak vm] in
             await vm?.load()
         }

@@ -20,8 +20,8 @@ struct RootView: View {
                 LoginScreenView()
             }
         }
-        .onAppear {
+        .onAppear(perform: {
             authVM.silentAuth()
-        }
+        })
     }
 }

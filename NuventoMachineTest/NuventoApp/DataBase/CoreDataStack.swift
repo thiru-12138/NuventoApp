@@ -26,15 +26,32 @@ final class CoreDataStack {
         container.viewContext
     }
 
-    // MARK: - Save Device
+    // MARK: - Save/Update Devices
     func save(_ device: DeviceModel) {
-        let entity = DeviceEntity(context: context)
-        entity.id = device.id
-        entity.name = device.name
-        entity.ipAddress = device.ipAddress
-        entity.isReachable = device.isReachable
+        let request: NSFetchRequest<DeviceEntity> = DeviceEntity.fetchRequest()
+        //request.predicate = NSPredicate(format: "id = \(device.id)")
+        request.predicate = NSPredicate(format: "name == %@", device.name)
 
-        saveContext()
+        do {
+            let results = try context.fetch(request)
+            if let existing = results.first {
+                existing.id = device.id
+                existing.name = device.name
+                existing.ipAddress = device.ipAddress
+                existing.isReachable = device.isReachable
+            } else {
+                let entity = DeviceEntity(context: context)
+                entity.id = device.id
+                entity.name = device.name
+                entity.ipAddress = device.ipAddress
+                entity.isReachable = device.isReachable
+            }
+            
+            saveContext()
+
+        } catch {
+            print("CoreData Error")
+        }
     }
 
     // MARK: - Fetch Devices

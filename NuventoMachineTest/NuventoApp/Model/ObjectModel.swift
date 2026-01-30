@@ -13,13 +13,15 @@ struct IPResponse: Codable {
 }
 
 struct IPInfo: Codable {
-    let city: String?
-    let region: String?
-    let country: String?
-    let org: String?
-    
+    let ip: String
+    let city: String
+    let region: String
+    let country: String
+    let org: String
+    let timezone: String
+
     enum CodingKeys: String, CodingKey {
-        case city, region, country, org
+        case ip, city, region, country, org, timezone
     }
 }
 

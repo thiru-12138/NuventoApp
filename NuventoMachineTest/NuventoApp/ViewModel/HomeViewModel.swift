@@ -21,14 +21,16 @@ final class HomeViewModel: ObservableObject {
 
     func startDiscovery() {
         loadFromCoreData()
-        dns.start()
+        dns.startDiscovery()
     }
 
+    // MARK: - CoreData Save/Update
     private func saveAndUpdate(_ device: DeviceModel) {
         CoreDataStack.shared.save(device)
         devices = CoreDataStack.shared.fetchDevices()
     }
 
+    // MARK: - Getting CoreData Results
     private func loadFromCoreData() {
         devices = CoreDataStack.shared.fetchDevices()
     }
