@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - IP Model
 struct IPResponse: Codable {
     let ip: String
 }
@@ -22,6 +23,7 @@ struct IPInfo: Codable {
     }
 }
 
+// MARK: - Device Model
 struct DeviceModel: Identifiable, Hashable {
     let id: UUID
     let name: String

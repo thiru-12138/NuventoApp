@@ -29,9 +29,32 @@
 		1FE428DE2F2BAF8B00CAF82A /* NuventoMachineTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuventoMachineTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1F860BC92F2C45EE0079BCAC /* Exceptions for "NuventoMachineTest" folder in "NuventoMachineTestTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				NuventoApp/Common/ViewModifiers.swift,
+				NuventoApp/View/RootView.swift,
+			);
+			target = 1FE428D32F2BAF8B00CAF82A /* NuventoMachineTestTests */;
+		};
+		1F860BCA2F2C45EE0079BCAC /* Exceptions for "NuventoMachineTest" folder in "NuventoMachineTestUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				NuventoApp/Common/ViewModifiers.swift,
+				NuventoApp/View/RootView.swift,
+			);
+			target = 1FE428DD2F2BAF8B00CAF82A /* NuventoMachineTestUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1FE428C42F2BAF8A00CAF82A /* NuventoMachineTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1F860BC92F2C45EE0079BCAC /* Exceptions for "NuventoMachineTest" folder in "NuventoMachineTestTests" target */,
+				1F860BCA2F2C45EE0079BCAC /* Exceptions for "NuventoMachineTest" folder in "NuventoMachineTestUITests" target */,
+			);
 			path = NuventoMachineTest;
 			sourceTree = "<group>";
 		};

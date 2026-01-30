@@ -11,17 +11,17 @@ import Combine
 @MainActor
 final class HomeViewModel: ObservableObject {
     @Published var devices: [DeviceModel] = []
-    private let mdns = DNSService()
+    private let dns = DNSService()
 
     init() {
-        mdns.onDeviceFound = { [weak self] device in
+        dns.onDeviceFound = { [weak self] device in
             self?.saveAndUpdate(device)
         }
     }
 
     func startDiscovery() {
         loadFromCoreData()
-        mdns.start()
+        dns.start()
     }
 
     private func saveAndUpdate(_ device: DeviceModel) {

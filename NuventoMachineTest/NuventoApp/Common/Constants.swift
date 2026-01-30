@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Constants
 public class Constants {
     public struct Urls {
         static let publicIP = "https://api.ipify.org?format=json"

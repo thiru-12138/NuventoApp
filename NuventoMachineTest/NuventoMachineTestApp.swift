@@ -10,12 +10,13 @@ import CoreData
 
 @main
 struct NuventoMachineTestApp: App {
-    //let persistenceController = PersistenceController.shared
+    @StateObject private var vm = LoginViewModel()
 
     var body: some Scene {
         WindowGroup {
-            //ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
-            LoginScreenView()
+            RootView()
+                .preferredColorScheme(.light)
+                .environmentObject(vm)
         }
     }
 }

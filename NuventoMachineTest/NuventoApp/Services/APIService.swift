@@ -7,10 +7,12 @@
 
 import Foundation
 
+// MARK: - Protocol
 protocol DataService {
     func fetchRequest<T: Codable>(url: String) async throws -> T
 }
 
+// MARK: - Network Service
 final class APIService: DataService {
     func fetchRequest<T>(url: String) async throws -> T where T : Decodable, T : Encodable {
         guard let url = URL(string: url) else {
@@ -21,6 +23,10 @@ final class APIService: DataService {
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 throw URLError(.badServerResponse)
+            }
+            
+            guard 200..<300 ~= httpResponse.statusCode else {
+                throw URLError(.init(rawValue: httpResponse.statusCode))
             }
             
             do {

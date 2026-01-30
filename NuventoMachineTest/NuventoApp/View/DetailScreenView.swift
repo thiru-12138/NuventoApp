@@ -22,11 +22,16 @@ struct DetailScreenView: View {
         ZStack {
             VStack {
                 Text("Device: \(device.name)")
+                    .font(Font.system(size: 15, weight: .semibold))
                 if let info = vm.info {
                     Text("City: \(info.city ?? "-")")
+                        .nuventoTextStyle()
                     Text("Region: \(info.region ?? "-")")
+                        .nuventoTextStyle()
                     Text("Country: \(info.country ?? "-")")
+                        .nuventoTextStyle()
                     Text("Company: \(info.org ?? "-")")
+                        .nuventoTextStyle()
                 }
             }.padding()
         }

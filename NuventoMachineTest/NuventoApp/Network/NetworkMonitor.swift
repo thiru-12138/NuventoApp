@@ -8,6 +8,7 @@
 import Foundation
 import Network
 
+// MARK: - Network Monitor
 final class NetworkMonitor {
     static let shared = NetworkMonitor()
     private let monitor = NWPathMonitor()

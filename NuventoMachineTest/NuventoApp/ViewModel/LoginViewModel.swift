@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 @MainActor
-final class AuthViewModel: ObservableObject {
+final class LoginViewModel: ObservableObject {
     @Published var isLoggedIn = false
 
     func login(username: String, password: String) async {
@@ -22,7 +22,13 @@ final class AuthViewModel: ObservableObject {
     }
 
     func silentAuth() {
-        isLoggedIn = (try? AuthService.shared.silentLogin()) ?? false
+        do {
+            isLoggedIn = try AuthService.shared.silentLogin()
+        } catch {
+            isLoggedIn = false
+        }
         print("isLoggedIn", isLoggedIn)
     }
 }
+
+

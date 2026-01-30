@@ -8,46 +8,35 @@
 import SwiftUI
 
 struct LoginScreenView: View {
-    @StateObject private var vm = AuthViewModel()
-    @State private var user = ""
-    @State private var pass = ""
+    @EnvironmentObject var vm: LoginViewModel
+    
+    @State private var user = "test"
+    @State private var pass = "1234"
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                GeometryReader { geo in
-                    VStack {
-                        TextField("Username", text: $user)
-                            .textFieldStyle(.roundedBorder)
-                        SecureField("Password", text: $pass)
-                            .textFieldStyle(.roundedBorder)
+        ZStack {
+            GeometryReader { geo in
+                VStack(spacing: 15.0) {
+                    HStack {
+                        Text("Login").font(Font.system(size: 40, weight: .bold))
                         Spacer()
-                        Button(action: {
-                            Task { await vm.login(username: user, password: pass) }
-                        }, label: {
-                            Text("Login")
-                                .frame(width: geo.size.width/1.15, height: 40, alignment: .center)
-                        })
-                        .frame(width: geo.size.width/1.15, height: 40, alignment: .center)
-                        .font(Font.system(size: 20, weight: .bold))
-                        .background(.purple)
-                        .foregroundStyle(.white)
-                        .clipShape(.capsule)
-                        .clipped()
-                    }.padding()
-                }
+                    }
+                    TextField("Username", text: $user)
+                        .textFieldStyle(.roundedBorder)
+                    SecureField("Password", text: $pass)
+                        .textFieldStyle(.roundedBorder)
+                    Spacer()
+                    Button(action: {
+                        Task { await vm.login(username: user, password: pass) }
+                    }, label: {
+                        Text("Login")
+                            .frame(width: geo.size.width/1.15, height: 40, alignment: .center)
+                    })
+                    .frame(width: geo.size.width/1.15, height: 40, alignment: .center)
+                    .nuventoButtonStyle()
+                }.padding()
             }
-            .navigationTitle("Login")
-            .onAppear(perform: {
-                vm.silentAuth()
-            })
-            //            .navigationDestination(isPresented: $vm.isLoggedIn, destination: {
-            //                HomeScreenView()
-            //            })
         }
+        .resignKeyboard()
     }
-}
-
-#Preview {
-    LoginScreenView()
 }

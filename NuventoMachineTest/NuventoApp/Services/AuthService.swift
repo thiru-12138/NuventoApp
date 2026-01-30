@@ -7,24 +7,27 @@
 
 import Foundation
 
+// MARK: - Authorization Service
 final class AuthService {
     static let shared = AuthService()
-    private let tokenKey = "access_token"
+    private let tokenKey = "oauth_access_token"
 
+    // MARK: - Login
     func login(username: String, password: String) async throws {
-        // Mock OAuth token call
-        let token = "mock_oauth_token_123"
+        let token = "nuvento_oauth_token_123"
         KeyChainHelper.save(token, key: tokenKey)
     }
 
+    // MARK: - Force Logout
     func silentLogin() throws -> Bool {
         guard NetworkMonitor.shared.isReachable else {
             logout()
             return false
         }
-        return KeyChainHelper.load(key: tokenKey) != nil
+        return false //KeyChainHelper.load(key: tokenKey) != nil
     }
 
+    // MARK: - Logout
     func logout() {
         KeyChainHelper.delete(key: tokenKey)
     }

@@ -8,6 +8,7 @@
 import Foundation
 import Network
 
+// MARK: - DNS Service
 final class DNSService: NSObject, NetServiceBrowserDelegate, NetServiceDelegate {
     private let browser = NetServiceBrowser()
     var onDeviceFound: ((DeviceModel) -> Void)?
