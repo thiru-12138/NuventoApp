@@ -5,7 +5,7 @@
 //  Created by Thirumalai Ganesh G on 29/01/26.
 //
 
-import CoreData
+/*import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
@@ -54,4 +54,4 @@ struct PersistenceController {
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
-}
+}*/
