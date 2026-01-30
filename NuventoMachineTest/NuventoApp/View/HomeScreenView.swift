@@ -37,7 +37,7 @@ struct HomeScreenView: View {
                 }
             }
         }
-        .navigationTitle("Home")
+        .navigationTitle("Home - Discovery")
         .onAppear(perform: {
             vm.startDiscovery()
             

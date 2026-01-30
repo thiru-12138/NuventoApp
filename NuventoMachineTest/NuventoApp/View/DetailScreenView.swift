@@ -35,11 +35,14 @@ struct DetailScreenView: View {
                                 Text(info.ip)
                             }
                             Section("Location") {
-                                Text("\(info.city), \(info.region)")
+                                Text("\(info.city) - \(info.postal), \(info.region)")
                                 Text(info.country)
                             }
                             Section("Provider") {
                                 Text(info.org)
+                            }
+                            Section("Time Zone") {
+                                Text(info.timezone)
                             }
                         }
                     }

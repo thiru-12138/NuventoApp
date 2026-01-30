@@ -19,9 +19,13 @@ struct IPInfo: Codable {
     let country: String
     let org: String
     let timezone: String
+    let loc: String
+    let postal: String
+    let readme: String
 
     enum CodingKeys: String, CodingKey {
         case ip, city, region, country, org, timezone
+        case loc, postal, readme
     }
 }
 
