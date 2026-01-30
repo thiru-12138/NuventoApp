@@ -8,11 +8,13 @@
 import Foundation
 import Combine
 
-@MainActor
 final class DetailViewModel: ObservableObject {
     @Published var info: IPInfo?
+    @Published var errorMessage: String?
+    @Published var isLoading = false
     
     private let service: DataService
+    private var task: Task<Void, Never>?
     
     init(service: DataService) {
         self.service = service
@@ -34,12 +36,33 @@ final class DetailViewModel: ObservableObject {
 
     // MARK: - IP Model
     func load() async {
-        do {
-            let ip = try await fetchPublicIP()
-            info = try await fetchIPInfo(ip: ip)
-        } catch {
-            print(error)
+        task?.cancel()
+        info = nil
+        errorMessage = nil
+        isLoading = true
+        
+        task = Task {
+            do {
+                let ip = try await fetchPublicIP()
+                let infodetails = try await fetchIPInfo(ip: ip)
+                await MainActor.run { [weak self] in
+                    self?.info = infodetails
+                }
+            } catch {
+                await MainActor.run { [weak self] in
+                    self?.errorMessage = error.localizedDescription
+                }
+                print("ipinfo error: \(error.localizedDescription)")
+            }
+            
+            await MainActor.run { [weak self] in
+                self?.isLoading = false
+            }
         }
+    }
+    
+    deinit {
+        task?.cancel()
     }
 }
 

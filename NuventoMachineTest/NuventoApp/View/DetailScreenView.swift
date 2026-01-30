@@ -21,17 +21,25 @@ struct DetailScreenView: View {
     var body: some View {
         ZStack {
             VStack {
+                if vm.isLoading {
+                    ProgressView()
+                }
+
                 Text("Device: \(device.name)")
                     .font(Font.system(size: 15, weight: .semibold))
-                if let info = vm.info {
-                    Text("City: \(info.city ?? "-")")
-                        .nuventoTextStyle()
-                    Text("Region: \(info.region ?? "-")")
-                        .nuventoTextStyle()
-                    Text("Country: \(info.country ?? "-")")
-                        .nuventoTextStyle()
-                    Text("Company: \(info.org ?? "-")")
-                        .nuventoTextStyle()
+                if let errorMessage = vm.errorMessage {
+                    Text(errorMessage).nuventoTextStyle()
+                } else {
+                    if let info = vm.info {
+                        Text("City: \(info.city ?? "-")")
+                            .nuventoTextStyle()
+                        Text("Region: \(info.region ?? "-")")
+                            .nuventoTextStyle()
+                        Text("Country: \(info.country ?? "-")")
+                            .nuventoTextStyle()
+                        Text("Company: \(info.org ?? "-")")
+                            .nuventoTextStyle()
+                    }
                 }
             }.padding()
         }

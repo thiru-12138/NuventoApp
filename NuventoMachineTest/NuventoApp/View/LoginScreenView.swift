@@ -27,7 +27,9 @@ struct LoginScreenView: View {
                         .textFieldStyle(.roundedBorder)
                     Spacer()
                     Button(action: {
-                        Task { await vm.login(username: user, password: pass) }
+                        Task { [weak vm] in
+                            await vm?.login(username: user, password: pass)
+                        }
                     }, label: {
                         Text("Login")
                             .frame(width: geo.size.width/1.15, height: 40, alignment: .center)
